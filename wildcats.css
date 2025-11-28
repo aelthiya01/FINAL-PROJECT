@@ -1,0 +1,254 @@
+
+:root {
+    --teal: #00a6a7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #333;
+    text-decoration: none;
+}
+
+header .logo span {
+    color: var(--teal);
+}
+
+header .navbar {
+    display: flex;
+    gap: 2rem;
+}
+
+header .navbar a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #333;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+header .navbar a:hover {
+    color: var(--teal);
+}
+
+header .icons a {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+header .icons a:hover {
+    color: var(--teal);
+}
+
+#toggler {
+    display: none;
+}
+
+header label {
+    display: none;
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.wildcats .p{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.heading2{
+    text-align: center;
+    font-size: 2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    header label {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        padding: 1rem 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    #toggler:checked ~ .navbar {
+        max-height: 300px;
+    }
+
+    header .navbar a {
+        padding: 1rem 2rem;
+        display: block;
+    }
+
+    .wildcats {
+        padding: 2rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .grid-item img {
+        height: 20rem;
+    }
+
+    .wildcats .heading {
+        font-size: 3rem;
+    }
+}
+
+
+.wildcats {
+    padding: 2rem 9%;
+}
+
+.wildcats .heading {
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(0, 166, 167, 0.05);
+    text-transform: capitalize;
+}
+
+.wildcats .heading span {
+    color: #00a6a7;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin-bottom: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+.breed-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.breed-btn:hover {
+    background: #00a6a7;
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 991px) {
+    .wildcats {
+        padding: 2rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .grid-item img {
+        height: 20rem;
+    }
+
+    .wildcats .heading {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .grid-item img {
+        height: 18rem;
+    }
+
+    .breed-btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .wildcats .heading {
+        font-size: 2.2rem;
+    }
+}
