@@ -225,8 +225,50 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.cat-care {
+    background: linear-gradient(90deg, var(--teal), #aff7ee);
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 4rem 0;
+    box-sizing: border-box;
+    color: #fff;
+}
 
- 
+.cat-care .row {
+    padding: 0 9%;
+}
+
+.cat-care .content {
+    max-width: 900px;
+    margin: 0;
+    text-align: left;
+}
+
+.cat-care .heading {
+    background: transparent;
+    color: #fff;
+    text-align: left;
+    padding: 0 9%;
+    margin: 0 0 1.5rem 0;
+    max-width: 900px;
+}
+
+.cat-care p {
+    margin-bottom: 1.8rem;
+    font-size: 1.7rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+
+
+
+
+
 
 
 
