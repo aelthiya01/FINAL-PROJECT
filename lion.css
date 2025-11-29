@@ -28,7 +28,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
+    padding: 1.2rem 6%;
     background: #fff;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -37,7 +37,7 @@ header {
 }
 
 header .logo {
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: bolder;
     color: #333;
     text-decoration: none;
@@ -49,12 +49,12 @@ header .logo span {
 
 header .navbar {
     display: flex;
-    gap: 2rem;
+    gap: 1.2rem;
 }
 
 header .navbar a {
-    font-size: 2rem;
-    padding: 0 1.5rem;
+    font-size: 1.6rem;
+    padding: 0 1rem;
     color: #333;
     text-decoration: none;
     text-transform: capitalize;
@@ -66,7 +66,7 @@ header .navbar a:hover {
 }
 
 header .icons a {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #333;
     margin-left: 1.5rem;
     transition: color 0.3s ease;
@@ -82,31 +82,19 @@ header .icons a:hover {
 
 header label {
     display: none;
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: #333;
     cursor: pointer;
 }
 
-.wildcats .p{
-    text-align: center;
-    font-size: 1.8rem;
-    color: #555;
-    margin-bottom: 2rem;
-}
 
-.heading2{
-    text-align: center;
-    font-size: 2rem;
-    color: #666;
-    margin-bottom: 2rem;
-}
 @media (max-width: 991px) {
     html {
         font-size: 55%;
     }
 
     header {
-        padding: 1.5rem 2rem;
+        padding: 1rem 1.25rem;
     }
 
     header label {
@@ -139,7 +127,7 @@ header label {
 
 .top-section {
     display: flex;
-    background-color: var(--bg-dark);
+    background-color: #1a94a9;
     color: #fbfbf6;
     padding: 6rem 2rem;
     align-items: center;
@@ -179,7 +167,7 @@ header label {
 
 .origin-section {
     display: flex;
-    background-color: #f0f1f1;
+    background-color: #e6f3f5;
     padding: 3.25rem 2rem;
     align-items: center;
     gap: 2rem;
@@ -230,7 +218,7 @@ header label {
 
 .info-row {
     display: flex;
-    background-color: #8ea9be;
+    background-color: #99cfd9;
     color: #222;
     gap: 1rem;
 }
@@ -337,4 +325,21 @@ body > div, .history-section, .fun-fact-section {
     margin-left: auto;
     margin-right: auto;
 }
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    font-size: 1.4rem;
+}
+
+footer a {
+    color: var(--teal);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
