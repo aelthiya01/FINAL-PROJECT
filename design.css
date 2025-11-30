@@ -412,6 +412,143 @@ footer a:hover {
 
 .cat-btn:hover { background: #00a6a7; transform: translateY(-4px); }
 
+
+.contacts .row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.contacts .row form {
+    flex: 1 1 560px;
+    padding: 2.2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.06);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.contacts .row form .box {
+    padding: 1rem;
+    font-size: 1.4rem;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 6px;
+    margin: 0;
+    flex: 1 1 calc(50% - 1rem);
+    min-width: 180px;
+}
+
+.contacts .row form textarea.box {
+    flex: 1 1 100%;
+    min-height: 12rem;
+}
+
+.contacts .row form .btn {
+    flex: 0 0 auto;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .contacts .row { flex-direction: column; }
+    .contacts .row form { padding: 1.2rem; }
+    .contacts .row form .box { flex: 1 1 100%; }
+}
+
+.footer {
+    background: linear-gradient(180deg, #0b1114 0%, #121418 100%);
+    color: #e6eef0;
+    padding: 3.5rem 9%;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.04);
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    right: -15%;
+    top: -30%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle at 30% 30%, rgba(0,166,167,0.12), transparent 40%);
+    transform: rotate(15deg);
+    pointer-events: none;
+}
+
+.footer .box-container {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.footer .box {
+    flex: 1 1 240px;
+    min-width: 220px;
+}
+
+.footer .box h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 0 0 1.5rem;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid rgba(0, 166, 167, 0.5);
+    margin-bottom: 1.2rem;
+}
+
+.footer .box a {
+    display: block;
+    color: rgba(230, 238, 240, 0.88);
+    text-decoration: none;
+    padding: 0.8rem 0;
+    font-size: 1.35rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .box a:hover {
+    color: var(--teal);
+    transform: translateX(6px);
+}
+
+.footer p {
+    color: rgba(230, 238, 240, 0.85);
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    position: relative;
+    z-index: 1;
+    line-height: 1.6;
+}
+
+.footer span {
+    color: var(--teal);
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .footer { padding: 2.5rem 2rem; font-size: 1.2rem; }
+    .footer .box-container { flex-direction: column; gap: 2rem; }
+    .footer .box { flex: 1 1 100%; }
+    .footer .box h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+    .footer .box a { font-size: 1.2rem; padding: 0.6rem 0; }
+    .footer p { font-size: 1.15rem; }
+}
+
 @media (max-width: 991px) {
     .cat-hero { min-height: 48vh; }
     .cats-header h2 { font-size: 2.2rem; }
