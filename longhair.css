@@ -57,6 +57,24 @@ header {
     z-index: 1000;
 }
 
+header .back-btn {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    transition: 0.3s ease;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+}
+
+header .back-btn:hover {
+    background: #ffffff;
+    transform: translateX(-3px);
+}
+
 header .logo {
     font-size: 2.4rem;
     font-weight: bolder;
@@ -373,3 +391,4 @@ body {
     color: rgba(255,255,255,0.95);
     text-align: center;
 }
+
